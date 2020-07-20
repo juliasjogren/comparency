@@ -1,0 +1,78 @@
+.navigation {
+  position: relative;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  border-bottom: 2px solid black;
+}
+
+.buttons {
+  padding-left: 20%;
+  align-self: center;
+}
+
+.navButton {
+  width: 30px;
+  cursor: pointer;
+  transition: transform 300ms;
+}
+
+.transformNav {
+  transform: rotate(0.25turn);
+}
+.line {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 8px;
+  background-color: #000;
+}
+
+.routes {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.route {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+.route:hover {
+  color: rgb(79, 143, 5);
+}
+
+.logo {
+  width: 200px;
+  padding-right: 10%;
+  align-self: center;
+  justify-self: center;
+  animation: fadeIn 500ms;
+}
+@keyframes fadeIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 0.8;
+  }
+}
+
+.comparencyLogo {
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 420px) {
+  .route {
+    font-size: 12px;
+  }
+  .logo {
+    width: 150px;
+    padding: 0;
+  }
+}

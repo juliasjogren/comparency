@@ -1,0 +1,70 @@
+.searchSection {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.searchContainer {
+  height: 20vh;
+  width: 700px;
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.search {
+  width: 70%;
+  background-color: white;
+  margin-bottom: 100px;
+}
+
+.searchBtn {
+  margin-top: 500px;
+}
+
+.vision {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 2%;
+  font-size: 30px;
+}
+
+.smallTitle {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.visionText {
+  margin: 2%;
+  display: flex;
+}
+
+.text {
+  text-align: center;
+  max-width: 300px;
+}
+
+@media (max-width: 470px) {
+  .title {
+    font-size: 20px;
+  }
+  .smallTitle {
+    font-size: 15px;
+  }
+  .visionText {
+    font-size: 12px;
+  }
+}
