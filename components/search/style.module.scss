@@ -1,0 +1,27 @@
+.search {
+  height: 15vh;
+  margin-top: 80px;
+  background-image: url("https://uploads-ssl.webflow.com/5e7731979105fadedae227ef/5e773765e5ba0e48a298c229_background-cloth.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  transition: height 0.3s;
+  &.home {
+    height: calc(100vh - 80px);
+
+    .input {
+      margin-bottom: 50px;
+    }
+  }
+
+  .input {
+    width: 70%;
+    background-color: white;
+    margin-bottom: 7px;
+  }
+}

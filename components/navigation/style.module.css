@@ -1,18 +1,22 @@
 .navigation {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
   height: 80px;
   display: grid;
-  grid-template-columns: 10% 90%;
-  border-bottom: 2px solid black;
+  grid-template-columns: 2fr 8fr 2fr;
+  background-color: white;
 }
 
 .buttons {
-  padding-left: 20%;
   align-self: center;
 }
 
 .navButton {
-  width: 30px;
+  margin: auto;
+  width: 20px;
   cursor: pointer;
   transition: transform 300ms;
 }
@@ -23,7 +27,7 @@
 .line {
   width: 100%;
   height: 2px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   background-color: #000;
 }
 
@@ -35,9 +39,12 @@
 }
 
 .route {
+  font-family: "Open Sans", sans-serif;
   text-decoration: none;
   color: #000;
-  font-size: 18px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .route:hover {
@@ -45,11 +52,11 @@
 }
 
 .logo {
-  width: 200px;
-  padding-right: 10%;
+  width: 125px;
   align-self: center;
   justify-self: center;
   animation: fadeIn 500ms;
+  cursor: pointer;
 }
 @keyframes fadeIn {
   from {
@@ -67,12 +74,20 @@
   text-align: center;
 }
 
-@media (max-width: 420px) {
+@media (min-width: 400px) {
+  .navigation {
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+  .navButton {
+    width: 30px;
+  }
+  .line {
+    margin-bottom: 8px;
+  }
   .route {
-    font-size: 12px;
+    font-size: 15px;
   }
   .logo {
-    width: 150px;
-    padding: 0;
+    width: 200px;
   }
 }

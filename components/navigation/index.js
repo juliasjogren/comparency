@@ -30,9 +30,7 @@ const Navigation = () => {
 
   return (
     <nav className={styles.navigation}>
-      <div className={styles.buttons}>
-        <Hamburger onClick={toggleOpen} isOpen={isOpen} />
-      </div>
+      <Hamburger onClick={toggleOpen} isOpen={isOpen} />
 
       {isOpen ? (
         <div className={styles.routes}>
