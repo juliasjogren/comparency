@@ -1,0 +1,36 @@
+.productlist {
+  margin-top: calc(15vh - 80px);
+  display: flex;
+  justify-content: center;
+}
+
+.gridList {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.tile {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+  &:hover {
+    border: thin solid black;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .topGridBar {
+    padding: 8px 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%);
+  }
+  .bottomGridBar {
+    padding: 8px 0;
+    background: linear-gradient(to top, rgba(0.5, 0, 0.5, 0.9) 0%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%);
+  }
+}
