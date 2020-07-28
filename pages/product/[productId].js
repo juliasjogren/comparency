@@ -1,6 +1,7 @@
 import styles from "./style.module.scss";
 import Router, { useRouter } from "next/router";
 import { productData } from "productData.js";
+import ProductTable from "components/productTable";
 
 const Product = () => {
   const router = useRouter();
@@ -8,11 +9,18 @@ const Product = () => {
 
   const product = productData.find((p) => p.id == productId);
 
-  // if (!product) {
-  //   Router && Router.push("/");
-  // }
-
-  return <div className={styles.product}>Produkt id: {productId}</div>;
+  if (product) {
+    return (
+      <div className={styles.product}>
+        <div className={styles.title}>
+          <h1>{product.brand}</h1>
+          {product.model}
+        </div>
+        <img className={styles.image} src={product.img} />
+        <ProductTable product={product} />
+      </div>
+    );
+  } else return <div></div>;
 };
 
 export default Product;
