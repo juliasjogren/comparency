@@ -8,9 +8,19 @@ import TableRow from "@material-ui/core/TableRow";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
+  productName: {
+    width: "150px",
+    textAlign: "center",
+    overflowWrap: "break-word",
+    fontWeight: "bold",
+  },
   total: {
     color: "green",
     fontWeight: "bold",
+    textAlign: "center",
+  },
+  tableCellValue: {
+    textAlign: "center",
   },
 });
 
@@ -37,7 +47,9 @@ const ProductTable = ({ product }) => {
           <TableHead>
             <TableRow>
               <TableCell></TableCell>
-              <TableCell key={product.id}>{product.brand}</TableCell>
+              <TableCell key={product.id} className={classes.productName}>
+                {product.model}
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -46,7 +58,7 @@ const ProductTable = ({ product }) => {
                 <TableCell component="th" scope="row" classes={{ root: styles.tableRowName }}>
                   {row.name}
                 </TableCell>
-                <TableCell key={row.id} classes={{ root: row.className }}>
+                <TableCell key={row.id} className={classes.tableCellValue} classes={{ root: row.className }}>
                   {row.value} KG CO2
                 </TableCell>
               </TableRow>
