@@ -1,6 +1,6 @@
 import styles from "./style.module.scss";
 import Router, { useRouter } from "next/router";
-import { productData } from "productData.js";
+import { productData } from "data.js";
 import ProductTable from "components/productTable";
 
 const Product = () => {

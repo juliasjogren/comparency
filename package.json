@@ -9,11 +9,13 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
+    "@material-ui/lab": "^4.0.0-alpha.56",
     "babel": "^6.23.0",
     "classnames": "^2.2.6",
     "next": "9.4.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-dropdown": "^1.7.0",
     "sass": "^1.26.10"
   }
 }

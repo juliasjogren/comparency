@@ -1,0 +1,59 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 70%;
+  padding-bottom: 1%;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.filterWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightgrey;
+}
+
+.title {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.check {
+  padding: 0;
+  width: 100%;
+  color: black;
+}
+
+.selectRoot {
+  width: 100%;
+  background-color: rgb(94, 91, 91);
+}
+
+.activeFilters {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.activeFilter {
+  padding: 1.5%;
+  background-color: lightgrey;
+}
+.filterWrap {
+  .removeUnderline > div::before,
+  .removeUnderline > div::after,
+  .removeUnderline > div:hover::before {
+    border: none;
+  }
+}
+
+// :global(.MuiInput-underline:before),
+// :global(.MuiInput-underline:after) {
+// :global(.MuiInput-underline:after) {
+//   border: none;
+// }

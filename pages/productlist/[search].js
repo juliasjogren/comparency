@@ -5,7 +5,7 @@ import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 import GridListTileBar from "@material-ui/core/GridListTileBar";
 import styles from "./style.module.scss";
-import { productData } from "productData.js";
+import { productData } from "data.js";
 import { useMediaQuery } from "@material-ui/core";
 import Link from "next/link";
 import IconButton from "@material-ui/core/IconButton";
