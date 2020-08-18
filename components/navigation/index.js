@@ -49,6 +49,7 @@ const Navigation = () => {
           </Link>
         </div>
       )}
+      {/* <div>Compare</div> */}
     </nav>
   );
 };

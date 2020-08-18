@@ -1,9 +1,10 @@
 import styles from "./style.module.scss";
+import CompareTable from "components/compareTable";
 
 const Compare = () => {
   return (
     <div className={styles.compare}>
-      <h1>Compare</h1>
+      <CompareTable />
     </div>
   );
 };

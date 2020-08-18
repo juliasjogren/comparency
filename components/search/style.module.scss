@@ -1,36 +1,73 @@
 .search {
-  height: 15vh;
+  height: 10vh;
   margin-top: 80px;
   background-image: url("https://uploads-ssl.webflow.com/5e7731979105fadedae227ef/5e773765e5ba0e48a298c229_background-cloth.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: brightness(0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 
-  transition: height 0.3s;
-  &.home {
-    height: calc(100vh - 80px);
+  .inputWrap {
+    display: grid;
+    grid-template-areas: "empty empty input filterButton";
+    grid-template-columns: 1fr 1fr 5fr 1fr;
+  }
 
-    .input {
-      margin-bottom: 50px;
-    }
+  .formWrap {
+    grid-area: input;
+    display: grid;
+    grid-template-areas: " searchInput submitButton";
+    grid-template-columns: 5fr 1fr;
   }
 
   .input {
-    width: 70%;
+    grid-area: searchInput;
+    margin: 1rem;
     background-color: white;
-    margin-bottom: 7px;
+    border-radius: 4px;
+  }
+  .submitButton {
+    grid-area: submitButton;
+    margin: 1rem;
   }
 
-  .button {
-    margin-bottom: 2%;
+  .filterButtonWrap {
+    grid-area: filterButton;
+    margin: 1rem;
+  }
+  .filterButton {
+    background-color: grey;
   }
 
-  .filters {
-    margin-top: 5%;
-    color: white;
+  .filterButton:hover {
+    background-color: rgb(133, 130, 130);
+  }
+
+  transition: height 0.3s;
+  &.filterVisible {
+    height: 30vh;
+  }
+  .filterWrap {
+    height: 40%;
+    width: 100%;
+  }
+
+  transition: height 0.3s;
+  &.home {
+    height: calc(70vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inputWrapHome {
+    // width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .filterWrapHome {
+    height: 0;
+    width: 0;
   }
 }

@@ -1,21 +1,25 @@
 .wrap {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  width: 70%;
-  padding-bottom: 1%;
+  justify-content: space-between;
 }
 
-.filter {
+.filters {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .filterWrap {
   display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
   align-items: center;
   justify-content: space-between;
-  background-color: lightgrey;
+  background-color: grey;
+  border-radius: 4px;
+  text-transform: uppercase;
 }
 
 .title {
@@ -35,15 +39,29 @@
 }
 
 .activeFilters {
-  margin-top: 5%;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-self: center;
 }
 .activeFilter {
-  padding: 1.5%;
+  cursor: pointer;
+  padding: 0.5%;
+  height: 25px;
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 1rem;
+  border-radius: 4px;
   background-color: lightgrey;
 }
+
+.filterTitle {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .filterWrap {
   .removeUnderline > div::before,
   .removeUnderline > div::after,
