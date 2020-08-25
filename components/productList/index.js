@@ -4,7 +4,6 @@ import { useState } from "react";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 import GridListTileBar from "@material-ui/core/GridListTileBar";
-import { productData } from "data.js";
 import { useMediaQuery } from "@material-ui/core";
 import Link from "next/link";
 import IconButton from "@material-ui/core/IconButton";
@@ -18,29 +17,10 @@ function AddIcon() {
   );
 }
 
-const ProductList = ({ type }) => {
+const ProductList = ({ products }) => {
   const isDesktop = useMediaQuery("(min-width:1024px)");
   const isTablet = useMediaQuery("(min-width:768px)");
   const [compareList, setCompareList] = useState([]);
-  let products = [];
-
-  function getTotalKo2(product) {
-    return product.framställning + product.frakt + product.tvätt + product.återvinning + product.odling;
-  }
-
-  if (type === "explore") {
-    productData.forEach((product) => {
-      product.total = getTotalKo2(product);
-    });
-
-    productData.sort(function (a, b) {
-      return a.total - b.total;
-    });
-
-    products = productData.filter((product) => product.id < 6);
-  } else {
-    products = productData;
-  }
 
   const getCols = () => {
     if (isDesktop) return 5;
