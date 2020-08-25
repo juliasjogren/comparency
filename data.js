@@ -1,15 +1,15 @@
 export const productData = [
-  { id: 1, img: "/cloth1.png", brand: "Filippa k", model: "ANNIE COTTON T-SHIRT", odling: 5, framställning: 5, frakt: 12, tvätt: 2, återvinning: 12, categorie: "tshirt" },
-  { id: 2, img: "/cloth10.jpg", brand: "Filippa k", model: "ANNIE COTTON T-SHIRT", odling: 8, framställning: 12, frakt: 12, tvätt: 12, återvinning: 12, categorie: "tshirt" },
-  { id: 3, img: "/cloth7.jpg", brand: "Filippa k", model: "ANNIE COTTON T-SHIRT", odling: 5, framställning: 12, frakt: 12, tvätt: 12, återvinning: 6, categorie: "pants" },
-  { id: 4, img: "/cloth4.png", brand: "Filippa k", model: "ANNIE COTTON T-SHIRT", odling: 15, framställning: 9, frakt: 12, tvätt: 12, återvinning: 12, categorie: "tshirt" },
-  { id: 5, img: "/cloth8.jpg", brand: "Filippa k", model: "ANNIE COTTON T-SHIRT", odling: 4, framställning: 12, frakt: 12, tvätt: 12, återvinning: 7, categorie: "pants" },
-  { id: 6, img: "/cloth6.jpeg", brand: "Filippa k", model: "ANNIE COTTON T-SHIRT", odling: 17, framställning: 12, frakt: 12, tvätt: 12, återvinning: 12, categorie: "tshirt" },
-  { id: 7, img: "/cloth3.jpeg", brand: "Filippa k", model: "ANNIE COTTON T-SHIRT", odling: 9, framställning: 4, frakt: 12, tvätt: 12, återvinning: 2, categorie: "tshirt" },
-  { id: 8, img: "/cloth5.jpeg", brand: "Filippa k", model: "ANNIE COTTON T-SHIRT", odling: 13, framställning: 12, frakt: 12, tvätt: 12, återvinning: 12, categorie: "tshirt" },
-  { id: 9, img: "/cloth9.webp", brand: "Filippa k", model: "ANNIE COTTON T-SHIRT", odling: 7, framställning: 12, frakt: 12, tvätt: 7, återvinning: 6, categorie: "tshirt" },
-  { id: 10, img: "/cloth2.jpeg", brand: "Filippa k", model: "ANNIE COTTON T-SHIRT", odling: 5, framställning: 15, frakt: 12, tvätt: 16, återvinning: 12, categorie: "pants" },
-  { id: 11, img: "/cloth11.jpg", brand: "Filippa k", model: "ANNIE COTTON T-SHIRT", odling: 5, framställning: 16, frakt: 12, tvätt: 12, återvinning: 17, categorie: "pants" },
+  { id: 1, img: "/cloth1.png", brand: "Filippa k", model: "ANNIE COTTON T-SHIRT", odling: 5, framställning: 5, frakt: 12, tvätt: 2, återvinning: 12, category: "tshirt" },
+  { id: 2, img: "/cloth10.jpg", brand: "Filippa k", model: "ANNIE COTTON T-SHIRT", odling: 8, framställning: 12, frakt: 12, tvätt: 12, återvinning: 12, category: "tshirt" },
+  { id: 3, img: "/cloth7.jpg", brand: "Filippa k", model: "ANNIE COTTON T-SHIRT", odling: 5, framställning: 12, frakt: 12, tvätt: 12, återvinning: 6, category: "pants" },
+  { id: 4, img: "/cloth4.png", brand: "Filippa k", model: "ANNIE COTTON T-SHIRT", odling: 15, framställning: 9, frakt: 12, tvätt: 12, återvinning: 12, category: "tshirt" },
+  { id: 5, img: "/cloth8.jpg", brand: "Filippa k", model: "ANNIE COTTON T-SHIRT", odling: 4, framställning: 12, frakt: 12, tvätt: 12, återvinning: 7, category: "pants" },
+  { id: 6, img: "/cloth6.jpeg", brand: "Filippa k", model: "ANNIE COTTON T-SHIRT", odling: 17, framställning: 12, frakt: 12, tvätt: 12, återvinning: 12, category: "tshirt" },
+  { id: 7, img: "/cloth3.jpeg", brand: "Filippa k", model: "ANNIE COTTON T-SHIRT", odling: 9, framställning: 4, frakt: 12, tvätt: 12, återvinning: 2, category: "tshirt" },
+  { id: 8, img: "/cloth5.jpeg", brand: "Filippa k", model: "ANNIE COTTON T-SHIRT", odling: 13, framställning: 12, frakt: 12, tvätt: 12, återvinning: 12, category: "tshirt" },
+  { id: 9, img: "/cloth9.webp", brand: "Filippa k", model: "ANNIE COTTON T-SHIRT", odling: 7, framställning: 12, frakt: 12, tvätt: 7, återvinning: 6, category: "tshirt" },
+  { id: 10, img: "/cloth2.jpeg", brand: "Filippa k", model: "ANNIE COTTON T-SHIRT", odling: 5, framställning: 15, frakt: 12, tvätt: 16, återvinning: 12, category: "pants" },
+  { id: 11, img: "/cloth11.jpg", brand: "Filippa k", model: "ANNIE COTTON T-SHIRT", odling: 5, framställning: 16, frakt: 12, tvätt: 12, återvinning: 17, category: "pants" },
 ];
 
 export const filters = [
