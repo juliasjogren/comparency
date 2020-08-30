@@ -8,6 +8,9 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     padding: theme.spacing(2),
+    minHeight: "180px",
+    width: "100%",
+    maxWidth: "240px",
     textAlign: "center",
     transition: "200ms",
     "&:hover": {
@@ -15,34 +18,37 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   image: {
-    width: "100px",
+    width: "100%",
+    height: "100px",
   },
 }));
 
-let tempImage = "https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80";
-const members = [{ id: "ulrika", name: "Ulrika Hafström", role: "CEO", age: 22, image: tempImage },
-{ id: "victor", name: "Victor Friberg", role: "CTO", age: 25, image: tempImage },
-{ id: "julia", name: "Julia Sjögren", role: "Lead Developer", age: 26, image: tempImage },
-{ id: "ludwig", name: "Ludwig Thurfjell", role: "Technical Advisor", age: 33, image: tempImage },
-{ id: "axel", name: "Axel Johansson", role: "Sales and Marketing", age: 22, image: tempImage } ];
+let tempImage = "";
+const members = [{ key: "ulrika", name: "Ulrika Hafström", role: "CEO", age: 22, image: tempImage },
+{ key: "victor", name: "Victor Friberg", role: "CTO", age: 25, image: tempImage },
+{ key: "julia", name: "Julia Sjögren", role: "Lead Developer", age: 26, image: tempImage },
+{ key: "ludwig", name: "Ludwig Thurfjell", role: "Technical Advisor", age: 33, image: tempImage },
+{ key: "axel", name: "Axel Johansson", role: "Sales and Marketing", age: 22, image: tempImage } ];
 
 export default function OmComparency() {
   const styles = useStyles();
 
   return (
     <Container className={styles.root}>
+      <h1>Our Team</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipis</p>
       <Grid container justify="center" alignItems="center" spacing={10}>
         {members.map((member) => (
           <Grid item>
             <Paper className={styles.paper} elevation={3}>
-              <img
+              <div
                 className={styles.image}
-                src={member.image}
-                alt={member.id}
+                alt={member.key}
+                style={{backgroundImage: `url(${member.image})`}}
               />
-              <h1>
+              <h2>
                 {member.name}, {member.age}
-              </h1>
+              </h2>
               <p>{member.role}</p>
             </Paper>
           </Grid>
