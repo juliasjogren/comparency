@@ -1,4 +1,4 @@
-import { Grid, Paper } from '@material-ui/core'
+import { Grid, Container, Paper } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -8,38 +8,35 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: 'center',
-    color: theme.palette.text.secondary,
-    background: '#a0adad'
+    color: theme.palette.text.secondary
   },
 }));
+
+const members = [{ id: "ulrika", name: "Ulrika Hafström", role: "CEO", age: 22 },
+{ id: "victor", name: "Victor Friberg", role: "CTO", age: 25 },
+{ id: "julia", name: "Julia Sjögren", role: "Lead Developer", age: 26 },
+{ id: "ludwig", name: "Ludwig Thurfjell", role: "Technical Advisor", age: 33 },
+{ id: "axel", name: "Axel Johansson", role: "Sales and Marketing", age: 22 } ];
 
 export default function OmComparency() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={3}>
-        <Grid item xs>
-          <Paper className={classes.paper}>Lite text</Paper>
+      <Container>
+        <Grid container spacing={10}>
+          {members.map((member) => (
+            <Grid item>
+              <Paper className={classes.paper} elevation={3}>
+                <h1>
+                  {member.name}, {member.age}
+                </h1>
+                <p>{member.role}</p>
+              </Paper>
+            </Grid>
+          ))}
         </Grid>
-        <Grid item xs>
-          <Paper className={classes.paper}>Mer text</Paper>
-        </Grid>
-        <Grid item xs>
-          <Paper className={classes.paper}>Annan text</Paper>
-        </Grid>
-      </Grid>
-      <Grid container spacing={3}>
-        <Grid item xs>
-          <Paper className={classes.paper}>Text</Paper>
-        </Grid>
-        <Grid item xs={6}>
-          <Paper className={classes.paper}>Ännu mer text</Paper>
-        </Grid>
-        <Grid item xs>
-          <Paper className={classes.paper}>Text igen</Paper>
-        </Grid>
-      </Grid>
+      </Container>
     </div>
   );
 }
